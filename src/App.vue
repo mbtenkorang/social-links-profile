@@ -1,14 +1,16 @@
 <script setup>
 import { reactive } from 'vue';
+import ImageComponent from './components/imagecomponent.vue';
+import NameComponent from './components/namecomponent.vue';
 
 const userProfile = reactive({
   userName: "Jessica Randall",
   profilePicture: "./assets/images/avatar-jessica.jpeg",
+  status: "Front-end developer and avid reader.",
   location: {
     city: "London",
     country: "United Kingdom"
   },
-  status: "Front-end developer and avid reader.",
   socialLinks: [
     {
       websiteName: "GitHub",
@@ -35,7 +37,8 @@ const userProfile = reactive({
 
 <template>
   <main>
-    <h1 class="font-sans">Hello World</h1>
+    <ImageComponent :src-url="userProfile.profilePicture" />
+    <NameComponent :username="userProfile.userName" />
   </main>
 </template>
 
