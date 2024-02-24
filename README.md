@@ -28,7 +28,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [social-links-profile-repo](https://github.com/mbtenkorang/social-links-profile)
-- Live Site URL: [social-links-profile](https://your-live-site-url.com)
+- Live Site URL: [social-links-profile](https://social-links-profile-fem.onrender.com/)
 
 ## My process
 
