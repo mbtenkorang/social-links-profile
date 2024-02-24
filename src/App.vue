@@ -1,7 +1,10 @@
 <script setup>
 import { reactive } from 'vue';
-import ImageComponent from './components/imagecomponent.vue';
-import NameComponent from './components/namecomponent.vue';
+import ImageComponent from './components/ImageComponent.vue';
+import NameComponent from './components/NameComponent.vue';
+import StatusComponent from './components/StatusComponent.vue';
+import LocationComponent from './components/LocationComponent.vue';
+import ButtonComponents from './components/ButtonComponents.vue';
 
 const userProfile = reactive({
   userName: "Jessica Randall",
@@ -14,12 +17,13 @@ const userProfile = reactive({
   socialLinks: [
     {
       websiteName: "GitHub",
-      websiteUrl: "www.github.com"
+      websiteUrl: "https://www.github.com"
     },
     {
       websiteName: "Frontend Mentor",
       websiteUrl: "www.frontendmentor.io"
-    }, {
+    },
+    {
       websiteName: "LinkedIn",
       websiteUrl: "www.linkedin.com"
     },
@@ -39,6 +43,9 @@ const userProfile = reactive({
   <main>
     <ImageComponent :src-url="userProfile.profilePicture" />
     <NameComponent :username="userProfile.userName" />
+    <LocationComponent :location="userProfile.location" />
+    <StatusComponent :status="userProfile.status" />
+    <ButtonComponents :social_links="userProfile.socialLinks" />
   </main>
 </template>
 
