@@ -21,32 +21,33 @@ const userProfile = reactive({
     },
     {
       websiteName: "Frontend Mentor",
-      websiteUrl: "www.frontendmentor.io"
+      websiteUrl: "https://www.frontendmentor.io"
     },
     {
       websiteName: "LinkedIn",
-      websiteUrl: "www.linkedin.com"
+      websiteUrl: "https://www.linkedin.com"
     },
     {
       websiteName: "Twitter",
-      websiteUrl: "www.twitter.com"
+      websiteUrl: "https://www.twitter.com"
     },
     {
       websiteName: "Instagram",
-      websiteUrl: "www.instagram.com"
+      websiteUrl: "https://www.instagram.com"
     }
   ],
 })
 </script>
 
 <template>
-  <main>
+  <main
+    class="flex flex-col items-center justify-around border border-dark-grey bg-dark-grey rounded-lg max-w-xs shadow-md px-6 py-4">
     <ImageComponent :src-url="userProfile.profilePicture" />
-    <NameComponent :username="userProfile.userName" />
-    <LocationComponent :location="userProfile.location" />
+    <div>
+      <NameComponent :username="userProfile.userName" />
+      <LocationComponent :location="userProfile.location" />
+    </div>
     <StatusComponent :status="userProfile.status" />
     <ButtonComponents :social_links="userProfile.socialLinks" />
   </main>
 </template>
-
-<style scoped></style>

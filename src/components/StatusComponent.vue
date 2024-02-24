@@ -5,5 +5,5 @@ const props = defineProps({
 </script>
 
 <template>
-    <p>{{ status }}</p>
+    <p class="font-normal text-sm my-6">"{{ status }}"</p>
 </template>

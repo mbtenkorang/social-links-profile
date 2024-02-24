@@ -13,7 +13,5 @@ const comp_location = computed(() => {
 </script>
 
 <template>
-    <div>
-        <p>{{ comp_location }}</p>
-    </div>
+    <p class="text-sm text-primary-green font-semibold text-center mt-2">{{ comp_location }}</p>
 </template>
