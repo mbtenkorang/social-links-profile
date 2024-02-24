@@ -7,7 +7,5 @@ const props = defineProps({
 </script>
 
 <template>
-    <div class="md:mt-5">
-        <img :src=" srcUrl" alt="profile picture" class="rounded-full">
-    </div>
+    <img :src=" srcUrl" alt="profile picture" class="rounded-full w-[35%] md:w-2/6 md:mt-5 mx-auto">
 </template>

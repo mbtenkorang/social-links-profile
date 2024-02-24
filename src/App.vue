@@ -41,7 +41,7 @@ const userProfile = reactive({
 
 <template>
   <main
-    class="flex flex-col items-center justify-around border border-dark-grey bg-dark-grey rounded-lg shadow-md pt-5 px-6">
+    class="flex flex-col items-center justify-around border border-dark-grey bg-dark-grey rounded-lg shadow-md mb-5 pt-5 px-6">
     <ImageComponent :src-url="userProfile.profilePicture" />
     <div>
       <NameComponent :username="userProfile.userName" />
