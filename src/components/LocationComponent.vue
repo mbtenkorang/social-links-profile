@@ -2,7 +2,8 @@
 import { computed } from 'vue';
 
 const props = defineProps({
-    location: Object
+    location: Object,
+    required: true
 })
 
 const comp_location = computed(() => {
