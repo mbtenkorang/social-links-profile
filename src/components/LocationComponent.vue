@@ -6,7 +6,7 @@ const props = defineProps({
     required: true
 })
 
-const comp_location = computed(() => {
+const computedLocation = computed(() => {
     let { city, country } = props.location
     return `${city}, ${country}`
 })
@@ -14,5 +14,5 @@ const comp_location = computed(() => {
 </script>
 
 <template>
-    <p class="text-sm text-primary-green font-semibold text-center mt-2">{{ comp_location }}</p>
+    <p class="text-sm text-primary-green font-semibold text-center mt-2">{{ computedLocation }}</p>
 </template>
